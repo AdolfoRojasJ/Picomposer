@@ -344,7 +344,7 @@ elif [ "$main_option" -eq 2 ]; then
 		if [ "$numerop4" -ge 1 ] && [ "$numerop4" -le "${#proyectos3[@]}" ]; then   				
 				proyecto_seleccionado_3="${proyectos3[$((numerop4-1))]}"
 				echo -e "$M5 $proyecto_seleccionado_3"
-				c_file=$(find ~/pico/pico-sdk/pico-examples/$proyecto_seleccionado_3 -type f -name "$proyecto_seleccionado_3.c" | head -n 1)
+				c_file=$(find ~/pico/pico-sdk/pico-examples/$proyecto_seleccionado_3 -type f -name "*.c" | head -n 1)
 				#IF .C EXISTS
 				if [ -n "$c_file" ]; then
 					echo "$M21 $c_file"
