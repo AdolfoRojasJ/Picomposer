@@ -574,6 +574,7 @@ elif [ "$main_option" -eq 4 ]; then
 		exec "$SCRIPT_DIR/$VERSION" 		         
 	elif [ "$option" -eq 1 ]; then
 		echo -e "$M18" 
+		echo -e "$M20"
 		read numero3
 		if [ "$numero3" -eq 1 ]; then
 			sudo apt install vim -y
@@ -599,10 +600,13 @@ elif [ "$main_option" -eq 4 ]; then
   			tail -n +2 "$CONFIG_FILE"
 			} > "$CONFIG_FILE.tmp" && mv "$CONFIG_FILE.tmp" "$CONFIG_FILE"
 			exec "$SCRIPT_DIR/$VERSION"
+		elif [ "$numero3" -eq 0 ]; then
+			exec "$SCRIPT_DIR/$VERSION" 	
 		fi	
 	#LANGUAGE SETTINGS
 	elif [ "$option" -eq 2 ]; then	
 		echo -e "$M19" 
+		echo -e "$M20" 
 		read langnumb
 		if [ "$langnumb" -eq 1 ]; then
 			LANGUAGE="English"
@@ -611,6 +615,8 @@ elif [ "$main_option" -eq 4 ]; then
 		elif [ "$langnumb" -eq 2 ]; then
 			LANGUAGE="Spanish"
 			awk -v lang="$LANGUAGE" 'NR == 2 { print lang; next } { print }' "$CONFIG_FILE" > "$CONFIG_FILE.tmp" && mv "$CONFIG_FILE.tmp" "$CONFIG_FILE"
+			exec "$SCRIPT_DIR/$VERSION"
+		elif [ "$langnumb" -eq 0 ]; then			
 			exec "$SCRIPT_DIR/$VERSION"
 		fi
 	else
