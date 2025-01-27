@@ -10,7 +10,7 @@ Raspberry Pi Pico Development Tool for Debian-Based LInux Systems!
 Picomposer (Pronounced "pi-kompóser" or "pai-kampóuzer", both correct) is a script developed for an easily manage of C projects for the Raspberry Pi Pico on my last years of university, it started as a script just for the installation of all the resources, but due all the needs that arose, it evolved until this first version, that allows the user create, build and upload projects for this microcontroller in a few minutes.
 
 ## Instructions
-1. Clone this repository.
+1. Clone this repository. (Download Directly or `git clone -b main https://github.com/AdolfoRojasJ/Picomposer`).
 2. `cd Picomposer`
 3. `chmod +x Picomposer.sh`
 4. `./Picomposer.sh`
