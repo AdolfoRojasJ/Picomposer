@@ -23,9 +23,9 @@ Picomposer (Pronounced "pi-kompóser" or "pai-kampóuzer", both correct) is a sc
 3. Execute on terminal (`./Picomposer.sh`) or use The Desktop Icon.
 
 ## Project
-- New Project: Select the libraries for the project, consider that PICO STDLIB is obligatory, modify the Serial Communication for your project (UART & USB) and choose a name for your project, this option automatically creates the `.c file` and the `CMakeLists.txt` file with all the parameters that you've selected on the `~/pico/pico-sdk/pico-examples` directory.
-- New FreeRTOS Project: Modify the Serial Communication for your project and choose a name for your project, this option allows you to create a project for the Raspberry Pi Pico using the [FREERTOS KERNEL](https://github.com/FreeRTOS/FreeRTOS-Kernel) on the `~/pico/pico-sdk/pico-examples` directory.
-- Open Project: Fetch all the available projects on the `~/pico/pico-sdk/pico-examples` directory, so you can edit the `.c file` of the selected project.
+- New Project: Select the libraries for the project, consider that PICO STDLIB is obligatory, modify the Serial Communication (UART & USB) and choose a name for your project, this option automatically creates the `.c file` and the `CMakeLists.txt` file with all the parameters that you've selected on the `~/pico/pico-sdk/pico-examples` directory.
+- New FreeRTOS Project: Modify the Serial Communication and choose a name for your project, this option allows you to create a project for the Raspberry Pi Pico using the [FREERTOS KERNEL](https://github.com/FreeRTOS/FreeRTOS-Kernel) on the `~/pico/pico-sdk/pico-examples` directory.
+- Open Project: Fetch all the available projects of the `~/pico/pico-sdk/pico-examples` directory, so you can edit the `.c file` of the selected directory.
 - Build Projects: Automatically does the `make` command on the `~/pico/pico-sdk/pico-examples/build` directory, creating all the binaries for the pico-examples directory.
 - Upload Projects: First you need to connect your RPi Pico on Boot mode, once it's done, select this option, then type the number of the project that you want to upload to your board.
 - Import Projects: Paste on the directory `~/resources/Import` all the directories with the Projects that you want to use, then select this option, type the number of the project that you want to import to the `~/pico/pico-sdk/pico-examples` directory.
