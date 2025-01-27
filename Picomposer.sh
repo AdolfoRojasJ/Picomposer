@@ -570,7 +570,7 @@ elif [ "$main_option" -eq 4 ]; then
 	echo -e "$M17" 
 	read option
 	#TEXT EDITOR SETTINGS   
-	if [ "$option" -eq 1 ]; then	  
+	if [ "$option" -eq 0 ]; then	  
 		exec "$SCRIPT_DIR/$VERSION" 		         
 	elif [ "$option" -eq 1 ]; then
 		echo -e "$M18" 
